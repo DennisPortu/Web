@@ -1,32 +1,44 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { Outlet, createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import { mk1 } from "./mk1/mk1";
-import { mk2 } from "./mk2/mk2";
-import { mk3 } from "./mk3/mk3";
+import { Mk1 } from "./mk1/mk1";
+import { Mk2 } from "./mk2/mk2";
+import { Mk3 } from "./mk3/mk3";
 import { Navbar } from "./navbar/Navbar";
-import { createBrowserRouter, RouterProvider } from "react-router";
 
-let router = createBrowserRouter([
+const Layout = () => (
+  <>
+    <Outlet />
+  </>
+);
+
+const router = createBrowserRouter([
   {
     path: "/",
-    Component: Navbar,
+    element: <Navbar />,
   },
   {
-    path: "/mk1",
-    Component: mk1,
-  },
-  {
-    path: "/mk2",
-    Component: mk2,
-  },
-  {
-    path: "/mk3",
-    Component: mk3,
-  },
-  {
-    path: "*",
-    Component: Navbar,
+    path: "/models",
+    element: <Layout />,
+    children: [
+      {
+        path: "mk1",
+        element: <Mk1 />,
+      },
+      {
+        path: "mk2",
+        element: <Mk2 />,
+      },
+      {
+        path: "mk3",
+        element: <Mk3 />,
+      },
+      {
+        path: "*",
+        element: <Mk1 />,
+      },
+    ],
   },
 ]);
 

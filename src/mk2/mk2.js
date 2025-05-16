@@ -1,9 +1,9 @@
 import "./mk2.css";
 
-export const mk2 = () => {
+export const Mk2 = () => {
   return (
     <section>
-      <div>a</div>
+      <div>b</div>
     </section>
   );
 };

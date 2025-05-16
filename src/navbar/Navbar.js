@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
@@ -10,9 +11,9 @@ export const Navbar = () => {
       </section>
 
       <section className="tarjetas">
-        <link to="../mk1/mk1" className="card mk1"></link>
-        <link to="../mk2/mk2" className="card mk2"></link>
-        <link to="../mk3/mK3" className="card mk3"></link>
+        <Link to="/models/mk1" className="card mk1"></Link>
+        <Link to="/models/mk2" className="card mk2"></Link>
+        <Link to="/models/mK3" className="card mk3"></Link>
       </section>
 
       <footer>

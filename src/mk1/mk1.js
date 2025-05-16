@@ -1,6 +1,6 @@
 import "./mk1.css";
 
-export const mk1 = () => {
+export const Mk1 = () => {
   return (
     <section>
       <div>a</div>

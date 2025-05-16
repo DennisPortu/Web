@@ -32,8 +32,8 @@ footer {
 /*Seccio paralax*/
 /*****************************************************************************************/
 .paralax {
-  height: 60vh;
-  background-image: url(""); /* Puedes cambiar esta URL */
+  height: 67vh;
+  background-image: url("../img/fondo.png"); /* Puedes cambiar esta URL */
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* efecto parallax */
@@ -65,33 +65,55 @@ footer {
 
 /*Seccio tarjetes*/
 /*****************************************************************************************/
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.card {
+  block-size: 250px;
+  background-color: #000000;
+  border-radius: 20px;
+  padding: 40px 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: white;
+}
+
 .card.mk1 {
-  background-image: url();
-  background-size: 180%;
+  background-image: url(../img/AudiTTMk1.png);
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .card.mk1:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px #383838;
+  box-shadow: 0 0 10px #777777;
 }
 
 .card.mk2 {
-  background-image: url();
-  background-size: 79%;
+  background-image: url(../img/AudiTTMk2.png);
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .card.mk2:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px #ffe600;
+  box-shadow: 0 0 10px #777777;
 }
 
 .card.mk3 {
-  background-image: url();
-  background-size: 120%;
+  background-image: url(../img/AudiTTMk3.png);
+  background-size: 130%;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .card.mk3:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px #383838;
+  box-shadow: 0 0 10px #777777;
 }
 /*****************************************************************************************/

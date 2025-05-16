@@ -1,6 +1,6 @@
 import "./mk3.css";
 
-export const mk3 = () => {
+export const Mk3 = () => {
   return (
     <section>
       <div>a</div>
