@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: #1f1f1f;
+}
+
+p {
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1f1f1f;
+  color: #aaaaaa;
+}
+
+/*Seccio paralax*/
+/*****************************************************************************************/
+.paralax {
+  height: 60vh;
+  background-image: url(""); /* Puedes cambiar esta URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* efecto parallax */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.paralax::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* oscurecer imagen para mejor contraste */
+}
+
+.paralax-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.paralax h1 {
+  font-size: 4em;
+  text-shadow: 0 0 10px #ffffff;
+}
+/*****************************************************************************************/
+
+/*Seccio tarjetes*/
+/*****************************************************************************************/
+.card.mk1 {
+  background-image: url();
+  background-size: 180%;
+  background-position: center;
+}
+.card.mk1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #383838;
+}
+
+.card.mk2 {
+  background-image: url();
+  background-size: 79%;
+  background-position: center;
+}
+.card.mk2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ffe600;
+}
+
+.card.mk3 {
+  background-image: url();
+  background-size: 120%;
+  background-position: center;
+}
+.card.mk3:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #383838;
+}
+/*****************************************************************************************/
