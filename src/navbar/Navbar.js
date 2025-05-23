@@ -1,10 +1,20 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import img1 from "../img/FondoMK1.png";
+import img2 from "../img/FondoMK2.png";
+import img3 from "../img/FondoMK3.png";
+
+const images = [img1, img2, img3];
 
 export const Navbar = () => {
+  const randomImage = images[Math.floor(Math.random() * images.length)];
+
   return (
     <main>
-      <section className="paralax">
+      <section
+        className="paralax"
+        style={{ backgroundImage: `url(${randomImage})` }}
+      >
         <div className="paralax-content">
           <h1>Audi TT</h1>
         </div>
